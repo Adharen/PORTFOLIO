@@ -10,16 +10,16 @@ import { MdEmail } from 'react-icons/md'
 import { Link } from 'react-scroll';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
- function Home() {
-//   useEffect(() => {
-//     AOS.init();
-//   }, [])
+function Home() {
+  //   useEffect(() => {
+  //     AOS.init();
+  //   }, [])
 
   return (
 
     <>
 
-      <nav class="navbar navbar-dark " style={{ opacity: "1.1", position: "relative",filter: "opacity(0.8)", background: "#000" }} id="nav">
+      <nav class="navbar navbar-dark " style={{ opacity: "1.1", position: "relative", filter: "opacity(0.8)", background: "#000" }} id="nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#" style={{ fontSize: "25px" }}><span style={{ color: "#2196f3" }} >Web</span>Maker</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,10 @@ import Fab from '@mui/material/Fab';
       </nav>
       <section className='box'>
         <video src={vid} autoPlay loop muted></video>
-        <h1> <span  style={{ color: "#2196f3" }}>Web</span><span>Maker</span></h1>
+        {/* <h1> <span  style={{ color: "#2196f3" }}>Web</span><span>Maker</span></h1> */}
+        <div class="wrapper">
+          <div class="typing-text">I am a <span  style={{ color: "#2196f3" }}>web</span> developer!</div>
+        </div>
         <Link to="Contact"> <a class="nav-link" href="#" className="boxBtn">Contact</a></Link>
         <div className="icon">
           <h3 ><AiFillInstagram style={{ color: "rgb(182, 62, 62)" }} /></h3>
